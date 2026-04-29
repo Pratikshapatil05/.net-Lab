@@ -1,0 +1,18 @@
+<p>admin works!</p>
+{{name}}
+<h2>Student Details</h2>
+<p>Name:{{name}}</p>
+<p>Age:{{age}}</p>
+<p>course:{{course}}</p>
+
+<input [(ngModel)]= "name" placeholder ="Enter name">
+
+<br><br>
+
+<input [(ngModel)]= "age"  type= "number" placeholder ="Enter age">
+<br><br>
+
+<input [(ngModel)]= "course" placeholder ="Enter course">
+<br><br>
+
+<button (click) ="button_clicked()">click here</button>

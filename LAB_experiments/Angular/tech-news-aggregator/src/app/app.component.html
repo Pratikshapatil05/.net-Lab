@@ -1,0 +1,11 @@
+<header class="navbar">
+  <h1>TechNow Aggregator</h1>
+  <nav>
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Feed</a>
+    <a routerLink="/bookmarks" routerLinkActive="active-link">My Bookmarks</a>
+  </nav>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
