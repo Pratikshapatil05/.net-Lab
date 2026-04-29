@@ -1,0 +1,51 @@
+<h2>Task 2: Directives with Div</h2>
+
+<button (click)="toggleDiv()">Show / Hide Div</button>
+
+<br><br>
+
+@if(showDiv){
+
+<div
+  [ngClass]="{
+    'red-box': colorType === 'red',
+    'blue-box': colorType === 'blue',
+    'green-box': colorType === 'green',
+    'default-box': colorType === 'other'
+  }"
+>
+
+  @switch(colorType){
+
+    @case('red'){
+      <p>🔴 Red Div</p>
+    }
+
+    @case('blue'){
+      <p>🔵 Blue Div</p>
+    }
+
+    @case('green'){
+      <p>🟢 Green Div</p>
+    }
+
+    @default{
+      <p>⚪ Default Div</p>
+    }
+
+  }
+
+</div>
+
+} @else {
+
+<p>Div Hidden</p>
+
+}
+
+<hr>
+
+<button (click)="changeColor('red')">Red</button>
+<button (click)="changeColor('blue')">Blue</button>
+<button (click)="changeColor('green')">Green</button>
+<button (click)="changeColor('other')">Default</button>

@@ -1,0 +1,25 @@
+# Express is a minimal and flexible web  application framework for node js that simplifies the development of web servers and api
+
+# In node js complicated and complex programs are not supported so Express is used to handle that programms
+
+# features of Express = routing ,middleware support ,request and responce handling ,rest api creation,template rendering
+
+#npm =>node package manager
+--steps for express ---
+    1.node -v ---version checking
+    2.npm init --package.json created and this is configuration flexible
+    3.npm install express --package-lock.json 
+    4.node filename
+
+--ROUTING in express js --
+ - routing refers to determining how an application respond to the client request for a specific url and http method
+ 
+
+ --components of Routing---
+ 1.http method
+ 2.handle function
+
+
+ ---middleware in express---
+ -midlleware are function that executes during the lifecycle of request before sending to final response.
+ -They have access to request ,response and next

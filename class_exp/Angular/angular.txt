@@ -1,0 +1,72 @@
+angular is a framework
+it is developed by Google and it is single page application->do not reload page
+
+1.node -v
+2.npm install -g @angular/cli 
+3. to run the project =>ng serve
+
+# package.json --is a congiguration file, information about your project
+#package=loc.json
+#angular.json=>it is a project configuration(styles,scripting,setting)
+#gitignore=>version control file
+#style.css=>globally css change in web page
+#index.html=>main html file to load angular#main.ts=>entry file
+#app.congig.js=>app congiguration file
+
+#"src" is a main folder structure where we are working and inside it "app" is a root folder
+
+#There are two types datatypes--
+        1.primitive--
+                name:string ="Pratiksha";
+                age:number=80;
+                data:any=null;
+                isloaded:boolean =false;
+        2.non-primitive
+
+#components--is a UI block of structure,when we create component 4 files created html ,css spec.ts   
+  " create component -->   ng gererate component component_name"
+
+#spec.ts -->used to unit testing
+
+#Data Binding --> two types of 
+        1.one way
+            -interpolation : {{value}}
+            -Property : [Property]="value
+            -event :(event)="handler()"
+        2.Two way
+                -
+#data binding means connect UI to code      
+
+
+Activity 1 : what is ng ,if else,switch,for loops in angular
+
+
+
+==================================================================================
+structural Directives--->
+if- else, for ,switch case  
+
+Directives means think of directives like magic wanes ,that are used to load web page without rewriting
+ 1.structural => change the structure of your page add,remove ,repeated things 
+ 2.attributes =>change the loop and style
+        -ng directives
+
+    #Activity1 --deep study of directives with example    
+
+
+   ==========================================================================================================
+   before angular 15 needs ng modules now a days we are using angular 21 version so modules are optionals , we can use stand alon components
+   # services ==>
+       - A services is like a helper class it is used to store data or share logic that many components are use 
+          insted of writing same code in every component we write once in a services
+
+
+
+
+
+step 2= crate one componet
+
+
+
+============================================================================================
+#routing ==> navigation between one page to another

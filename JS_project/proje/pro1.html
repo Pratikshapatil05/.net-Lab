@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Buttons Combined</title>
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+<body>
+
+    <h1>JavaScript Button Project</h1>
+
+    <!-- Alert Button -->
+    <button onclick="showMessage()">Click Me</button>
+
+    <br>
+
+    <!-- Change Text -->
+    <h2 id="text">Hello</h2>
+    <button onclick="changeText()">Change Text</button>
+
+    <br>
+
+    <!-- Change Background -->
+    <button onclick="changeColor()">Change Background</button>
+
+    <br>
+
+    <!-- Counter -->
+    <h2 id="count">0</h2>
+    <button onclick="increase()">Increase</button>
+
+    <br>
+
+    <!-- Hide / Show -->
+    <p id="para">This is some text</p>
+    <button onclick="toggleText()">Hide / Show</button>
+
+    <script>
+        // Alert
+        function showMessage() {
+            alert("Button Clicked!");
+        }
+
+        // Change Text
+        function changeText() {
+            document.getElementById("text").innerHTML = "Welcome Pratiksha!";
+        }
+
+        // Change Background
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        // Counter
+        let num = 0;
+        function increase() {
+            num++;
+            document.getElementById("count").innerHTML = num;
+        }
+
+        // Hide / Show
+        function toggleText() {
+            let p = document.getElementById("para");
+
+            if (p.style.display === "none") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

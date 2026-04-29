@@ -1,0 +1,26 @@
+.red-box,
+.blue-box,
+.green-box,
+.default-box {
+  color: white;
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.default-box {
+  background-color: gray;
+}

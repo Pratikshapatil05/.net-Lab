@@ -1,0 +1,68 @@
+<h1>Experiment 8 - Angular</h1>
+
+<h1>Task 1: Data Binding</h1>
+
+<p><b>One Way Binding:</b> Data flows from TS → HTML using Interpolation</p>
+
+<p><b>Two Way Binding:</b> Data flows both ways using ngModel</p>
+
+<hr>
+
+<h2>Interpolation (double curly braces):</h2>
+
+<p>Student Name: {{ studentName }}</p>
+<p>Student Age: {{ studentAge }}</p>
+
+<hr>
+
+<h2>Property Binding ([]):</h2>
+
+<img [src]="imageURL" width="250">
+
+<p>Image URL:</p>
+<p>{{ imageURL }}</p>
+
+<hr>
+
+<h2>Add Student (Two Way + Event Binding):</h2>
+
+<input
+  type="text"
+  placeholder="Enter student name"
+  [(ngModel)]="newStudent"
+>
+
+<button (click)="addStudent()">Add</button>
+
+<hr>
+
+<h2>Event Binding (click):</h2>
+
+<button (click)="toggleStudents()">
+  Toggle Student List
+</button>
+
+<hr>
+
+<div *ngIf="showStudents">
+  <h2>Student List:</h2>
+
+  <ul>
+   <li *ngFor="let student of students">
+      {{ students }}
+    </li>
+  </ul>
+</div>
+
+<hr>
+
+<h1>Task 2: Directives with Div (Color Change)</h1>
+
+<button (click)="toggleDiv()">
+  Show / Hide Div
+</button>
+
+<br><br>
+<div *ngIf="showDiv" class="blue-box">
+  Blue Div (blue)
+</div>
