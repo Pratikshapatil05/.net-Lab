@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="datatypes/datatypes.csproj" Id="fc5cbd59-573b-4d8f-8e89-539e675bf98e" />
+  <Project Path="helloWorld/helloWorld.csproj" />
+  <Project Path="math/math.csproj" Id="75eb0763-eb90-4d8b-b3b2-2ca0c1f85965" />
+  <Project Path="operators/operators.csproj" Id="8da4b714-c52e-4755-80b8-2de98e330555" />
+  <Project Path="strings/strings.csproj" Id="73e1025d-e35f-408e-99fb-da18383ce366" />
+  <Project Path="typeCasting/typeCasting.csproj" Id="383372e3-2397-43c7-8594-a0b46a9353b5" />
+  <Project Path="userInput/userInput.csproj" Id="71662f64-d3e2-46d9-b2ff-481312b95207" />
+  <Project Path="variable/variable.csproj" Id="5b77b120-8361-4a53-94cf-6df686eb3d43" />
+</Solution>
